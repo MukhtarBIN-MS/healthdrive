@@ -1,18 +1,19 @@
 {
   "expo": {
-    "name": "donor-drive",
-    "slug": "donor-drive",
-    "version": "1.0.0",
+    "name": "healthdrive",
+    "slug": "donordrive",
+    "version": "2.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/14ad241c-472e-4085-89bd-c632aea9b567"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -21,13 +22,27 @@
       "supportsTablet": true
     },
     "android": {
+      "versionCode":7,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/logo.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.binms.healthdrive",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "14ad241c-472e-4085-89bd-c632aea9b567"
+      }
+    },
+    "owner": "binms",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
     }
   }
 }
